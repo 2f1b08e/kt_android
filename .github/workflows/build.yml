@@ -40,6 +40,10 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
+        with:
+          build-scan-publish: true
+          build-scan-terms-of-use-url: "https://gradle.com/terms-of-service"
+          build-scan-terms-of-use-agree: "yes"
 
       - name: Build with Gradle
         run: |
@@ -48,20 +52,20 @@ jobs:
       - name: Upload release
         uses: actions/upload-artifact@v4
         with:
-          name: "KsuWebUI-release"
+          name: "release"
           path: "./app/build/outputs/apk/release/*.apk"
           compression-level: 9
 
       - name: Upload release mapping
         uses: actions/upload-artifact@v4
         with:
-          name: "KsuWebUI-release-mappings"
+          name: "mappings"
           path: "./app/build/outputs/mapping/release"
           compression-level: 9
 
       - name: Upload debug
         uses: actions/upload-artifact@v4
         with:
-          name: "KsuWebUI-debug"
+          name: "debug"
           path: "./app/build/outputs/apk/debug/*.apk"
           compression-level: 9
