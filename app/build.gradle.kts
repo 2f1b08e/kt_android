@@ -95,5 +95,3 @@ dependencies {
     androidTestImplementation(libs.androidx.test.runner)
     implementation(libs.material)
 }
-
-}
