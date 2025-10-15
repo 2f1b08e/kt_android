@@ -17,5 +17,5 @@
 
 <resources>
 
-    <style name="Theme.[App]" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.BeautifulApp" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
