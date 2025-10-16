@@ -1,4 +1,3 @@
-// In: ui/theme/Type.kt
 package com.example.beautifulapp.ui.theme
 
 import androidx.compose.material3.Typography

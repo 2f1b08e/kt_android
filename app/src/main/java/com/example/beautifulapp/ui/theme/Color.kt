@@ -1,4 +1,3 @@
-// In: ui/theme/Color.kt
 package com.example.beautifulapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
